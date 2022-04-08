@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont-wjl}
+\usepackage{multicol}
+\usepackage{geometry}
+\geometry{a4paper, portrait}
+%\geometry{margin={1cm,1cm}}
+\usepackage{ragged2e}
+\usepackage{textcomp}
+\usepackage[inline]{enumitem}
+\usepackage{mathtools}
+\usepackage{fontawesome}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Header}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Sub-Title
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+  \vspace{-\topsep} % Hacky fix for awkward extra vertical space
+  \huge\color{subheadings}\custombold{DevOps Engineer}
+\end{center}
+% \vspace{-\topsep} % Reduce the spacing
+% I am seeking a DevOps role within a multi-disciplinary project.
+I enjoy working in a highly collaborative environment on challenging technical problems, ranging from concept generation to design, implementation and product support.
+I have built up a cross-cutting knowledge base that facilitates technical discussions up-and-down the solution stack, with strong knowledge of modern practices such as Agile development that allow teams to work smarter and achieve more.
+On Engineering projects I put into use skills and resourcefulness honed during my time working in live events.
+I enjoy everything from requirements management, to systems engineering, to coding, to interacting with customers through writing documentation or delivering presentations.
+A jack of all trades, master of some!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Previous Employment
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\section{Previous Employment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Roke - Eng - Software
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2021-22_Roke_Engineer_Software}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Roke - Eng - Sensors and Comms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2020-21_Roke_Engineer_SandC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Roke - Grad
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2018-20_Roke_Graduate_Engineer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Freelance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2012-19_Freelance}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Telethon
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Employment/2015-17_Telethon}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Selex ES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Employment/2014-15_Selex_ES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Undergraduate Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Education/Education}
+
+\input{horizontal_rule}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Engineering Projects
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \pagebreak
+\section{Engineering Projects}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SiPh Test Platform
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2017_4K_Video_Streaming_on_FPGA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LDWS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2016_Lane_Departure_Warning}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MATLAB Image Processing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2016_MATLAB_Image_Processing}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Mouse Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2014_Mouse}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Advent of Code
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Personal_Projects/Advent_of_Code}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Home Server
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Personal_Projects/2022_Home_Server}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Magic Club Emails
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Personal_Projects/2021_Magic_Club_Emails}
+
+\input{horizontal_rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills and Languages
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Skills_Languages_Tools_Technologies}
+
+\input{horizontal_rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Activities
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Backstage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Activities/BTS}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Socs Exec Treas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Activities/Socs_Exec_Treasurer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Hobbies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Hobbies}
+
+\input{horizontal_rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Other
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Other}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/References}
+
+\end{document}  \documentclass[]{article}
