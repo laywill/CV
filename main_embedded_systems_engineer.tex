@@ -45,7 +45,7 @@
 \usepackage{textcomp}
 \usepackage[inline]{enumitem}
 \usepackage{mathtools}
-\usepackage{fontawesome}
+\usepackage{needspace}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,6 +79,8 @@ A jack of all trades, master of some!
 \sectionsep
 \section{Previous Employment}
 
+\input{Content/Employment/_employment_intro}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Roke - Eng - Software
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,6 +111,10 @@ A jack of all trades, master of some!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \input{Content/Employment/2014-15_Selex_ES}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Landlord
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2012-20_Landlord}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -122,20 +128,6 @@ A jack of all trades, master of some!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Undergraduate Education
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Education/Education}
-\pagebreak
-
-%\sectionsep
-%\vspace{-\topsep} % Reduce the spacing
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-% \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     Engineering Projects
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -145,7 +137,7 @@ A jack of all trades, master of some!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SiPh Test Platform
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Education/Projects/2017_4K_Video_Streaming_on_FPGA}
+% \input{Content/Education/Projects/2017_4K_Video_Streaming_on_FPGA}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LDWS
@@ -163,10 +155,14 @@ A jack of all trades, master of some!
 % \input{Content/Education/Projects/2014_Mouse}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Personal_Projects/2022_CV}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Advent of Code
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{Content/Personal_Projects/Advent_of_Code}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Home Server
@@ -199,8 +195,12 @@ A jack of all trades, master of some!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Backstage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Activities/BTS}
+% \input{Content/Activities/BTS}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Socs Exec Treas
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Activities/Socs_Exec_Treasurer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Hobbies
@@ -219,6 +219,9 @@ A jack of all trades, master of some!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     References
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{horizontal_rule}
+
 \input{Content/References}
 
 \end{document}  \documentclass[]{article}

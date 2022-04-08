@@ -45,7 +45,7 @@
 \usepackage{textcomp}
 \usepackage[inline]{enumitem}
 \usepackage{mathtools}
-\usepackage{import}
+\usepackage{needspace}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -60,11 +60,64 @@
 %     Sub-Title
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{center}
-  \vspace{-\topsep} % Hacky fix for awkward extra vertical space
-  \huge\color{subheadings}\custombold{Embedded Systems Engineer}
-\end{center}
-\vspace{-\topsep} % Reduce the spacing
+% \begin{center}
+%   \vspace{-\topsep} % Hacky fix for awkward extra vertical space
+%   \huge\color{subheadings}\custombold{Embedded Systems Engineer}
+% \end{center}
+% \vspace{-\topsep} % Reduce the spacing
+
+I am seeking a role within a multi-disciplinary project in a company that recognises the value that its people bring to the business.
+I enjoy working in a highly collaborative environment on challenging technical problems, ranging from concept generation to design, implementation and product support.
+I have built up a cross-cutting knowledge base that facilitates technical discussions up-and-down the solution stack, with strong knowledge of modern practices such as Agile development that allow teams to work smarter and achieve more.
+On Engineering projects I put into use skills and resourcefulness honed during my time working in live events.
+A jack of all trades, master of some!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Previous Employment
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\section{Previous Employment}
+
+\input{Content/Employment/_employment_intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Roke - Eng - Software
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2021-22_Roke_Engineer_Software}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Roke - Eng - Sensors and Comms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2020-21_Roke_Engineer_SandC}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Roke - Grad
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2018-20_Roke_Graduate_Engineer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Freelance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2012-19_Freelance}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Telethon
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2015-17_Telethon}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Selex ES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2014-15_Selex_ES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Landlord
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2012-20_Landlord}
+
+\input{horizontal_rule}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,50 +127,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{Content/Education/Education}
 
+\input{horizontal_rule}
 
-%\sectionsep
-%\vspace{-\topsep} % Reduce the spacing
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Activities
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Activities}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Backstage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Activities/BTS}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Socs Exec Treas
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Activities/Socs_Exec_Treasurer}
-
-% \vspace{-\topsep} % Reduce the spacing
-% \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Engineering Projects
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% \pagebreak
 \section{Engineering Projects}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SiPh Test Platform
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Education/Projects/2017_4K_Video_Streaming_on_FPGA}
+% \input{Content/Education/Projects/2017_4K_Video_Streaming_on_FPGA}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LDWS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Education/Projects/2016_Lane_Departure_Warning}
+% \input{Content/Education/Projects/2016_Lane_Departure_Warning}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     MATLAB Image Processing
@@ -127,98 +156,77 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Mouse Project
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Education/Projects/2014_Mouse}
+% \input{Content/Education/Projects/2014_Mouse}
 
-\vspace{-\topsep} % Reduce the spacing
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Personal_Projects/2022_CV}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Advent of Code
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Personal_Projects/Advent_of_Code}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Home Server
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Personal_Projects/2022_Home_Server}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Magic Club Emails
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Personal_Projects/2021_Magic_Club_Emails}
+
+\input{horizontal_rule}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Previous Employment
+%     Skills and Languages
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Skills_Languages_Tools_Technologies}
+
+\input{horizontal_rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Activities
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Previous Employment}
+\needspace{10\baselineskip}
+\section{Activities}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Selex ES
+%     Backstage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Employment/2014-15_Selex_ES}
+\input{Content/Activities/BTS}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Telethon
+%     Socs Exec Treas
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Employment/2015-17_Telethon}
-
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
-
+% \input{Content/Activities/Socs_Exec_Treasurer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Freelance
+%     Hobbies
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\runsubsection{Freelance }
-\descript{| Production Technician}
-\location{Jul 2012 – Present | UK}
-\begin{tightemize}
-  \item Work has included setup and operation of sound, lighting, power, video, truss/support structures and staging; as well as show technical management.
-  \item Strict adherence to schedules, times, and requirements to deliver events on time and on budget.
-  \item Regularly lead small teams as a head of department or show technical manager.
-\end{tightemize}
+\input{Content/Hobbies}
 
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
-%\sectionsep
-
+\input{horizontal_rule}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 %     Other
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Other}
-  \vspace{-\topsep} % Reduce the spacing
-  \begin{flushleft}
-  \begin{multicols}{3}
-  \begin{tightemize}
-      \item Full UK Driving licence\\ (B, B1, f, k, p)
-      \item British Passport Holder
-      \item DOULOS Comprehensive Advanced VHDL
-      \item IPAF licence (3a, 3b, PAV)
-%       \item Tallescope (Moveable) card
-      \item Fire Awareness trained
-      \item PAT Electrical Safety Trained
-    \end{tightemize}
-  \end{multicols}
-  \end{flushleft}
-
-\vspace{-\topsep} % Reduce the spacing
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     Languages
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Languages}
-\begin{minipage}[t]{.69\textwidth}
-  \subsection{Programming}
-  \begin{multicols}{3}
-    \location{Experienced:} \textbullet{} MATLAB \textbullet{} Verilog \\ \textbullet{} VHDL \textbullet{} System Verilog \\ \columnbreak
-    \location{Intermediate:} \textbullet{} TCL \textbullet{} C \textbullet{} HTML \\ \textbullet{} \LaTeX\  \\  \columnbreak
-    \location{Novice:} \textbullet{} CSS \textbullet{} Assembly for PIC \\ \textbullet{} Python \textbullet{} Shell / Bash
-  \end{multicols}
-\end{minipage}
-\hfill %\vrule{}
-\begin{minipage}[t]{.30\textwidth}
-  \subsection{Spoken \& Written}
-  \begin{multicols}{2}
-    \location{Native fluency:} English\\  \columnbreak
-    \location{Basic proficiency:} French\\
-  \end{multicols}
-\end{minipage}
-
-%\vspace{\topsep} % Reduce the spacing
-%\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.1pt}}
+\input{Content/Other}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     References
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{horizontal_rule}
+
 \input{Content/References}
 
 \end{document}  \documentclass[]{article}
