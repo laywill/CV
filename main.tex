@@ -51,6 +51,7 @@
 
 \begin{document}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE
@@ -75,6 +76,9 @@ I have built up a cross-cutting knowledge base that facilitates technical discus
 On Engineering projects I put into use skills and resourcefulness honed during my time working in live events.
 In summary: A jack of all trades, master of some!
 
+Uncomment this to disable hyperlinks in the document
+\begin{NoHyper}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Previous Employment
@@ -86,14 +90,19 @@ In summary: A jack of all trades, master of some!
 \input{Content/Employment/_employment_intro}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     QinetiQ - Senior Agile CICD Engineer - Software
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2022-now_QinetiQ_Senior_Agile_CICD_Engineer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Roke - Senior Eng - Software
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Employment/2022-now_Roke_Senior_Engineer_Software}
+\input{Content/Employment/2022-22_Roke_Senior_Engineer_Software}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Roke - Line Management
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Employment/2021-now_Roke_Line_Manager}
+\input{Content/Employment/2021-22_Roke_Line_Manager}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Roke - Eng - Software
@@ -174,7 +183,7 @@ In summary: A jack of all trades, master of some!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     CV
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Personal_Projects/2022_CV}
+% \input{Content/Personal_Projects/2022_CV}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Advent of Code
@@ -238,8 +247,12 @@ In summary: A jack of all trades, master of some!
 %     References
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Force this to be at the bottom of the page
+\vspace*{\fill}
+
 \input{horizontal_rule}
 
 \input{Content/References}
 
+\end{NoHyper}
 \end{document}  \documentclass[]{article}
