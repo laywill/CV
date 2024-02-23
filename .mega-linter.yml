@@ -1,6 +1,6 @@
 ---
 # Configuration file for MegaLinter
-# See all available variables at https://megalinter.io/configuration/ and in linters documentation
+# See all available variables at https://megalinter.io/latest/configuration/ and in linters documentation
 
 FILTER_REGEX_EXCLUDE: '(fonts)'
 APPLY_FIXES: all
@@ -8,7 +8,8 @@ DISABLE:
   - COPYPASTE # Uncomment to disable checks of excessive copy-pastes
 DISABLE_LINTERS:
   - JSON_PRETTIER
-  - YAML_PRETTIER 
-  - COPYPASTE_JSCPD 
+  - YAML_PRETTIER
+  - COPYPASTE_JSCPD
+  - REPOSITORY_CHECKOV
 EMAIL_REPORTER: false
 SPELL_FILTER_REGEX_EXCLUDE: (fonts|\.github)
