@@ -1,5 +1,22 @@
 {
   "version": "0.2",
   "language": "en-GB",
-  "allowCompoundWords": true
+  "allowCompoundWords": true,
+  "words": [
+    "QinetiQ",
+    "Roke",
+    "Selex",
+    "ES",
+    "CI",
+    "CD",
+    "MOSFET",
+    "ISTAR",
+    "Questa",
+    "Vivado",
+    "Xilinx",
+    "CEFR",
+    "Deedy",
+    "Debarghya",
+    "LDWS"
+  ]
 }
