@@ -1,8 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Roke - Engineer - Comms and Sensors
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \sectionsep{}\needspace{1\baselineskip}
-\sectionsep{}\runsubsection{Roke}
+% If there are less than N\baselineskip (N lines of text) of vertical space left on the current page, the \section{New Section} will start on the next page.
+% This ensures that the section heading and at least N lines of text appear together on the same page, avoiding awkward breaks.
+\needspace{5\baselineskip}
+\runsubsection{Roke}
 \descript{| Engineer \textemdash{} Sensors and Communications}
 \location{September 2020 \textendash{} June 2021 | Romsey, UK}
 % \vspace{0.5em}
@@ -16,3 +18,4 @@ I joined an expanding project designing and delivering firmware and software IP 
     % \item Transitioned from Word Documents to documents-as-a-service via CI pipeline using Markdown and Pandoc.
 \end{tightemize}
 \sectionsep{}
+\vfill{}
