@@ -1,11 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Freelance
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \sectionsep{}\needspace{1\baselineskip}
+% If there are less than N\baselineskip (N lines of text) of vertical space left on the current page, the \section{New Section} will start on the next page.
+% This ensures that the section heading and at least N lines of text appear together on the same page, avoiding awkward breaks.
+\needspace{5\baselineskip}
 \runsubsection{Freelance}
 \descript{| Sound Engineer \& Production Technician}
 \location{July 2012 \textendash{} April 2019 | UK}
-% \vspace{0.5em}
+% \vspace{0.25em}
 \begin{tightemize}
   \item Designed sound systems using CAD modelling and array processing knowledge for events across the UK.
   % \item Responsible for Radio Frequency (RF) coordination to deliver reliable performance and ensure OfCOM compliance.
@@ -16,3 +18,4 @@
   % \item Custom fabrication of electronics for events. Examples include DMX serial data controlled LED lettering, custom installation of cables and speakers, and WiFi
 \end{tightemize}
 \sectionsep{}
+\vfill{}

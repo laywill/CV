@@ -1,5 +1,8 @@
+% If there are less than N\baselineskip (N lines of text) of vertical space left on the current page, the \section{New Section} will start on the next page.
+% This ensures that the section heading and at least N lines of text appear together on the same page, avoiding awkward breaks.
+\needspace{1\baselineskip}
 \begin{justify}
 My full employment history along with further details is available on my \href{https://uk.linkedin.com/in/laywill}{LinkedIn profile}.
 \end{justify}
 \vspace{-\topsep} % Hacky fix for awkward extra vertical space
-% \sectionsep{}
+\sectionsep{}

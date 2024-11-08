@@ -1,11 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Advent of Code
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% If there are less than N\baselineskip (N lines of text) of vertical space left on the current page, the \section{New Section} will start on the next page.
+% This ensures that the section heading and at least N lines of text appear together on the same page, avoiding awkward breaks.
+\needspace{2\baselineskip}
 \runsubsection{Advent of Code / Programming Puzzles}
 \descript{ }
 \location{Dec 2018 \textendash{} Ongoing | Personal Project}
-\vspace*{-\topsep}  % Suppress line gap
-\begin{justify}
 I attempt the \href{https://adventofcode.com/}{Advent of Code} programming puzzles every December \textemdash{} you can see my attempts in \href{https://gitlab.com/laywill/}{GitLab}.
 I apply DevOps best practice to experiment with new tools. This includes: CI pipeline, pre-commit beautification and static analysis.
-\end{justify}
+\sectionsep{}
