@@ -2,6 +2,7 @@
   "version": "0.2",
   "language": "en-GB",
   "allowCompoundWords": true,
+  "dictionaries": ["en-gb", "latex ", "filetypes", "fonts", "companies", "softwareTerms", "misc"],
   "words": [
     "QinetiQ",
     "Roke",
@@ -16,7 +17,10 @@
     "Xilinx",
     "CEFR",
     "Deedy",
-    "Debarghya",
-    "LDWS"
+    "LDWS",
+    "RAIDO"
+  ],
+  "ignorewords": [
+    "Debarghya"
   ]
 }
