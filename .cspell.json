@@ -20,7 +20,8 @@
     "LDWS",
     "RAIDO"
   ],
-  "ignorewords": [
-    "Debarghya"
+  "ignoreWords": [
+    "Debarghya",
+    "latexmkrc"
   ]
 }
