@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This is a modified ONE COLUMN version of
 % the following template:
-% 
+%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
 % Version 1.1 (30/4/2014)
@@ -18,15 +18,15 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Known Issues:
@@ -48,8 +48,11 @@
 \usepackage{mathtools}
 \usepackage{needspace}
 \usepackage{datetime}
+\usepackage{tabto} % More meaningful use of the \tab command
+\NumTabs{5}        % define N equally spaced tabs starting at the left margin  and spanning \linewidth
 
 \begin{document}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -63,19 +66,26 @@
 %     Sub-Title
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-\topsep} % Hacky fix for awkward extra vertical space
-\begin{center}
-  \vspace{-\topsep} % Hacky fix for awkward extra vertical space
-  \huge\color{subheadings}\custombold{Manager}
-\end{center}
+% I am seeking a role within a multi-disciplinary project in a company that recognises the value that its people bring to the business.
+% I enjoy working in a highly collaborative environment on challenging technical problems, ranging from concept generation to design, implementation and product support.
+% I have built up a cross-cutting knowledge base that facilitates technical discussions up-and-down the solution stack, with strong knowledge of modern practices such as Agile development and DevOps that allow teams to work smarter and achieve more.
+% On Engineering projects I put into use skills and resourcefulness honed during my time working in live events.
+% In summary: A jack of all trades, master of some!
 
-I am seeking a role within a company that recognises the value that its people bring to the business.
-I enjoy working in a highly collaborative environment in which people f eel empowered and engaged in their day-to-day work and their overall career progression.
-% Everyone is different and has different needs - I believe that recognising this fact helps to build happier, and more productive teams.
-Working as an Engineer across a variety of fields I have gained a cross-cutting knowledge base that facilitates better understanding of others' skills, and how to match the interests of the individual with the needs of the business.
-I am a people orientated generalist and thrive when my work is varied, challenging, and meaningful.
-\newline
-In summary: A jack of all trades, master of some!
+% I enjoy working in a highly collaborative environment where people feel empowered and engaged in their day-to-day work and their overall career progression.
+% As a Leader, I apply my cross-cutting knowledge base of Agile development and DevOps to build high performing, self-supporting, delivery focused teams. \newline
+% I am a people orientated generalist and thrive when my work is varied, challenging, and meaningful.
+% In summary: A jack of all trades, master of some!
+
+I specialize in coaching Agile best practices and DevOps principles to build high-performing software delivery teams. \newline
+I unite people across diverse settings \textendash{} whether in-person, remote, or hybrid \textendash{} by opening communication channels and streamlining information flow.
+I am a generalist that can work across technologies \textendash{} from embedded to cloud and AI. \newline
+My leadership is grounded in creating empowered, engaged teams that excel in a collaborative environment, delivering meaningful and varied work that continuously meets and exceeds delivery goals.
+
+
+
+% Uncomment this to disable hyperlinks in the document
+% \begin{NoHyper}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -85,6 +95,16 @@ In summary: A jack of all trades, master of some!
 \sectionsep{}\section{Previous Employment}
 
 \input{Content/Employment/_employment_intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     QinetiQ - Senior Devops Engineer - Software
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2023-now_QinetiQ_Team_Leader}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     QinetiQ - Senior Devops Engineer - Software
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Employment/2022-23_QinetiQ_Senior_DevOps_Engineer}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Roke - Senior Eng - Software
@@ -133,6 +153,7 @@ In summary: A jack of all trades, master of some!
 
 \input{horizontal_rule}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Undergraduate Education
@@ -144,25 +165,55 @@ In summary: A jack of all trades, master of some!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+%     Skills and Languages
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Skills_Languages_Tools_Technologies}
+
+\input{horizontal_rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 %     Engineering Projects
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Personal Projects}
+% \pagebreak
+\section{Engineering Projects}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SiPh Test Platform
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2017_4K_Video_Streaming_on_FPGA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LDWS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2016_Lane_Departure_Warning}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     MATLAB Image Processing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2016_MATLAB_Image_Processing}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Mouse Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{Content/Education/Projects/2014_Mouse}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     CV
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \input{Content/Personal_Projects/2022_CV}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%    Advent of Code
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Advent of Code
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{Content/Personal_Projects/Advent_of_Code}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Home Server
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \input{Content/Personal_Projects/2022_Home_Server}
+\input{Content/Personal_Projects/2022_Home_Server}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Magic Club Emails
@@ -173,43 +224,36 @@ In summary: A jack of all trades, master of some!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%     Skills and Languages
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \input{Content/Skills_Languages_Tools_Technologies}
-
-% \input{horizontal_rule}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     Activities
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Activities}
 
+% \needspace{10\baselineskip}
+% \section{Activities}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Backstage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Activities/BTS}
+% \input{Content/Activities/BTS}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Societies Executive Treasurer
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \input{Content/Activities/Societies_Executive_Treasurer}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Hobbies
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Content/Hobbies}
-
-\input{horizontal_rule}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Other
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \input{Content/Other}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Hobbies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Content/Hobbies}
+
+% \input{horizontal_rule}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     References
@@ -222,4 +266,5 @@ In summary: A jack of all trades, master of some!
 
 \input{Content/References}
 
+% \end{NoHyper}
 \end{document}  \documentclass[]{article}
