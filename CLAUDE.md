@@ -22,6 +22,8 @@ There are two entry points, representing tailored CV variants:
 
 Both are thin wrappers: they carry the (identical) preamble, declare `\newif\ifseniormgr`, set the flag, and `\input{body}`. **All shared content lives in `body.tex`** — a single source of truth. The two variants no longer drift: edit `body.tex` once, and wrap any variant-specific difference in `\ifseniormgr … \else … \fi`. Keep the preamble in the two wrappers identical to each other. (Build either wrapper with XeLaTeX; they select their variant via the flag.)
 
+The canonical compiled PDFs are now produced automatically via GitHub Actions CI (`.github/workflows/build-pdf.yml`) on every push to `main` and published to the rolling `latest` GitHub Release. Overleaf remains available for optional WYSIWYG spacing and layout tweaks, but is no longer required to obtain a compiled PDF.
+
 ## Architecture
 
 - **`deedy-resume-openfont-wjl.cls`** — the custom document class. Defines all colours, fonts (Lato / Raleway / Source Sans Pro, vendored under `fonts/`), and the semantic commands used throughout the content files:
