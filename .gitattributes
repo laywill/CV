@@ -1,0 +1,13 @@
+# Normalise all text to LF in the repo; check out native locally
+* text=auto eol=lf
+
+# Explicit for the source files
+*.tex   text eol=lf
+*.cls   text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.json  text eol=lf
+
+# Vendored fonts and other binaries — never touch
+*.ttf   binary
+*.pdf   binary
