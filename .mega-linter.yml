@@ -13,5 +13,5 @@ DISABLE_LINTERS:
   - REPOSITORY_CHECKOV
   - ACTION_ZIZMOR
 EMAIL_REPORTER: false
-SPELL_FILTER_REGEX_EXCLUDE: (fonts|\.github|.mega-linter.yml|.gitattributes\.gitignore|CLAUDE.md)
+SPELL_FILTER_REGEX_EXCLUDE: (fonts|\.github|.mega-linter.yml|.gitattributes\.gitignore|CLAUDE.md|\.vscode)
 LATEX_CHKTEX_ARGUMENTS: --nowarn 13
