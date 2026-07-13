@@ -1,0 +1,53 @@
+---
+name: Build PDF
+
+# Compile the CV entry points with XeLaTeX and upload the resulting PDFs as
+# workflow artifacts.
+on: # yamllint disable-line rule:truthy - false positive
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  build-pdf:
+    name: Build ${{ matrix.entrypoint }}.pdf
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        entrypoint:
+          - main
+          - main_senior_engineering_manager
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      # Runs from the repo root (the default working-directory), since the
+      # document class loads fonts via fontspec's Path= option using paths
+      # relative to the repo root (fonts/lato/, fonts/raleway/, etc.).
+      - name: Compile ${{ matrix.entrypoint }}.tex with XeLaTeX
+        uses: dante-ev/latex-action@e83cbecc817854081b162caabbc5a08a1bea1bb2 # 2026-A
+        with:
+          root_file: ${{ matrix.entrypoint }}.tex
+          args: -xelatex -interaction=nonstopmode -file-line-error
+
+      - name: Upload ${{ matrix.entrypoint }}.pdf artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: cv-${{ matrix.entrypoint }}
+          path: ${{ matrix.entrypoint }}.pdf
+          retention-days: 30
