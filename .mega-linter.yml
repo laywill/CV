@@ -12,5 +12,5 @@ DISABLE_LINTERS:
   - COPYPASTE_JSCPD
   - REPOSITORY_CHECKOV
 EMAIL_REPORTER: false
-SPELL_FILTER_REGEX_EXCLUDE: (fonts|\.github|.mega-linter.yml)
+SPELL_FILTER_REGEX_EXCLUDE: (fonts|\.github|.mega-linter.yml|.gitattributes\.gitignore|CLAUDE.md)
 LATEX_CHKTEX_ARGUMENTS: --nowarn 13
