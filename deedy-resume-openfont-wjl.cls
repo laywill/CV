@@ -93,7 +93,11 @@ Last Updated on
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
-\newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1 \\} \normalfont}
+% Guard against an empty argument: \\ with nothing preceding it on the
+% line raises "LaTeX Error: There's no line here to end." (several
+% Content/ fragments call \location{} with no argument), so only emit
+% the forced line break when there is actually text to end.
+\newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont \def\@location@arg{#1}\ifx\@location@arg\@empty\else{#1\\}\fi \normalfont}
 
 % Section seperators command
 \newcommand{\sectionsep}[0]{\vspace{8pt}}
