@@ -1,0 +1,89 @@
+---
+name: Release PDF
+
+# Rebuild the CV entry points with XeLaTeX and publish them as assets on a
+# rolling "latest" GitHub Release. This is the successor to the old manual
+# "download the PDF from Overleaf" step, and only runs once a push has
+# actually landed on main - it deliberately does not run on pull_request
+# (see .github/workflows/build-pdf.yml for that).
+#
+# This workflow rebuilds both PDFs itself rather than reusing the artifacts
+# from build-pdf.yml's run, so it stays self-contained.
+on: # yamllint disable-line rule:truthy - false positive
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+
+permissions: {}
+
+jobs:
+  build-pdf:
+    name: Build ${{ matrix.entrypoint }}.pdf
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        entrypoint:
+          - main
+          - main_senior_engineering_manager
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      # Runs from the repo root (the default working-directory), since the
+      # document class loads fonts via fontspec's Path= option using paths
+      # relative to the repo root (fonts/lato/, fonts/raleway/, etc.).
+      - name: Compile ${{ matrix.entrypoint }}.tex with XeLaTeX
+        uses: dante-ev/latex-action@e83cbecc817854081b162caabbc5a08a1bea1bb2 # 2026-A
+        with:
+          root_file: ${{ matrix.entrypoint }}.tex
+          args: -xelatex -interaction=nonstopmode -file-line-error
+
+      - name: Upload ${{ matrix.entrypoint }}.pdf artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: cv-${{ matrix.entrypoint }}
+          path: ${{ matrix.entrypoint }}.pdf
+          retention-days: 1
+
+  release:
+    name: Publish latest release
+    needs: build-pdf
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download PDF artifacts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: cv-*
+          merge-multiple: true
+
+      # Re-publishes the "latest" tag on every push to main. overwrite_files
+      # is explicitly set (even though it already defaults to true) so a
+      # stale main.pdf / main_senior_engineering_manager.pdf from a prior
+      # run never lingers alongside the fresh ones - matching asset
+      # filenames are replaced in place rather than accumulating.
+      - name: Publish latest release
+        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
+        with:
+          tag_name: latest
+          name: Latest CV build
+          body: >-
+            Automatically rebuilt from
+            ${{ github.repository }}@${{ github.sha }}.
+          make_latest: true
+          overwrite_files: true
+          files: |
+            main.pdf
+            main_senior_engineering_manager.pdf
