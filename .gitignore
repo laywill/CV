@@ -1,6 +1,6 @@
 # Reference Material
 # Files that include details used to inform my CV, but should not be included
-reference_materials/
+reference_material/
 
 # Claude Code
 .claude/settings.local.json
