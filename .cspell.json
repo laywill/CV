@@ -4,13 +4,12 @@
   "allowCompoundWords": true,
   "dictionaries": ["en-gb", "latex ", "filetypes", "fonts", "companies", "softwareTerms", "misc"],
   "words": [
+    "ARCD",
     "CD",
     "CEFR",
-    "chktex",
     "CI",
     "Deedy",
     "ES",
-    "ifseniormgr",
     "ISTAR",
     "LDWS",
     "MOSFET",
@@ -25,7 +24,9 @@
     "Xilinx"
   ],
   "ignoreWords": [
+    "chktex",
     "Debarghya",
+    "ifseniormgr",
     "latexmkrc"
   ]
 }
