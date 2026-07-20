@@ -5,6 +5,11 @@ reference_material/
 # Claude Code
 .claude/settings.local.json
 .claude/worktrees/
+**/*_plan.md
+**/*notes.md
+
+# TexLive
+*.pdf
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,latex,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,visualstudiocode,latex,git
