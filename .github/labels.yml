@@ -1,0 +1,27 @@
+---
+# Declarative label set, synced into the repo by
+# .github/workflows/labels.yml. "Use this template" only copies files, not
+# labels, so this is what makes labels actually show up here.
+#
+# Curated for a solo CV content repo rather than a collaborative software
+# project - no bug/enhancement/good-first-issue style labels.
+
+- name: content
+  color: "0e8a16"
+  description: CV wording, positioning, or entry changes
+
+- name: tooling
+  color: "1d76db"
+  description: CI, build, lint, or devcontainer changes
+
+- name: nit
+  color: "cfd3d7"
+  description: Small polish or cleanup, no functional change
+
+- name: github_actions
+  color: "000000"
+  description: GitHub Actions workflow/dependency updates
+
+- name: chore
+  color: "ededed"
+  description: Maintenance work that isn't content or tooling
