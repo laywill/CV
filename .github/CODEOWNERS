@@ -2,3 +2,9 @@
 # Default owner for the CV repository
 
 * @laywill
+
+# GitHub Actions workflows
+.github/workflows/* @laywill
+
+# Devcontainer configuration
+.devcontainer/* @laywill
