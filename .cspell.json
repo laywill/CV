@@ -11,6 +11,7 @@
     "COTS",
     "Claude",
     "Copilot",
+    "danteev",
     "Deedy",
     "ES",
     "ISTAR",
@@ -28,10 +29,12 @@
     "Telethon",
     "telethons",
     "subagents",
+    "texlive",
     "Ubiquiti",
     "Unifi",
     "Vivado",
-    "Xilinx"
+    "Xilinx",
+    "Zsh"
   ],
   "ignoreWords": [
     "chktex",

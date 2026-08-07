@@ -1,0 +1,25 @@
+{
+  "name": "CV",
+  "image": "danteev/texlive:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "upgradePackages": true,
+      "username": "vscode",
+      "userUid": "automatic",
+      "userGid": "automatic"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "streetsidesoftware.code-spell-checker",
+        "James-Yu.latex-workshop"
+      ]
+    }
+  },
+  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}

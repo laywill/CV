@@ -7,3 +7,10 @@ updates:
     schedule:
       # Check for updates to GitHub Actions every week
       interval: "weekly"
+    labels:
+      - "github_actions"
+      - "chore"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
