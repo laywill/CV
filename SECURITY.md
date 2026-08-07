@@ -4,7 +4,7 @@
 
 If a vulnerability is suitable for immediate public disclosure (low
 severity, no active exploit risk), please open a
-[GitHub issue](../../issues/new/choose).
+[GitHub issue](https://github.com/laywill/CV/issues/new/choose).
 
 Otherwise, if it needs to stay private until fixed, contact William Lay
 ([@laywill](https://github.com/laywill) on GitHub) directly rather than
