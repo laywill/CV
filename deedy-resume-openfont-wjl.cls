@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This is a modified ONE COLUMN version of
 % the following template:
-% 
+%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
 % Version 1.1 (30/4/2014)
@@ -18,7 +18,7 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Intro Options
@@ -42,8 +42,8 @@
 \usepackage{fontspec,xltxtra,xunicode}
 
 % Color definitions
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -58,22 +58,22 @@
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
 Last Updated on
 \today
 \end{textblock}}
 
 % Name command
 \newcommand{\namesection}[3]{
-	\centering{
-		\sffamily
-    	\fontspec[Path = fonts/lato/]{Lato-Black}\fontsize{40pt}{20cm}\selectfont #1 
-		\fontspec[Path = fonts/lato/]{Lato-Black}\selectfont #2
-	} \\
-	\vspace{5pt}
-	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
-	\vspace{-15pt}
+  \centering{
+    \sffamily
+    \fontspec[Path = fonts/lato/]{Lato-Black}\fontsize{40pt}{20cm}\selectfont #1
+    \fontspec[Path = fonts/lato/]{Lato-Black}\selectfont #2
+  } \\
+  \vspace{5pt}
+  \centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+  \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+  \vspace{-15pt}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
 
