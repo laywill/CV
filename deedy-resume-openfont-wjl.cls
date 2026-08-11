@@ -81,7 +81,7 @@ Last Updated on
 \titleformat{\section}{\color{headings}
 \scshape\fontspec[Path = fonts/lato/]{Lato-Light}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
-% Subeadings command
+% Subheadings command
 \titleformat{\subsection}{\color{subheadings}
 \fontspec[Path = fonts/lato/]{Lato-Bold}\fontsize{12pt}{12pt}\selectfont\raggedright\bfseries\uppercase}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
