@@ -63,9 +63,11 @@ jobs:
       # MegaLinter
       - name: MegaLinter
 
-        # You can override MegaLinter flavor used to have faster performances
-        # More info at https://megalinter.io/latest/flavors/
-        uses: oxsecurity/megalinter@15e5b45552097e318c93de385779ce3b1084052c # v10.0.0
+        # Custom flavor pre-scoped to the linters this repo actually uses
+        # (GitHub Actions, LaTeX, Markdown, YAML/JSON, spelling, secrets/SBOM
+        # scanning) rather than the full generic MegaLinter image.
+        # More info at https://github.com/laywill/megalinter-custom-flavor-github-latex-markdown
+        uses: laywill/megalinter-custom-flavor-github-latex-markdown@13ebde04a17b79972fb4f1b2417851230306dc37 # v10.0.0
 
         id: ml
 
