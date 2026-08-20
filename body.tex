@@ -30,14 +30,21 @@ I am a big-picture person who thinks in systems, and systems of systems, which i
 I can hold my own as a technical lead too, from low-level FPGA and embedded through to cloud, infrastructure-as-code, and AI.
 I am opinionated about automation, linting, and how to brew a decent cup of coffee.
 
-\else
+\else\iftechnical%
+Thank you for coming to my 2-page TED Talk.
+I am a big-picture person who thinks in systems, and systems of systems, which is how I spot where a problem really lives rather than where it is showing up.
+My range is wider than most: VHDL on radio firmware, software-defined radio, cloud and infrastructure-as-code, and an AI cyber range, nearly all of it in defence, and nearly all of it under constraints that ruled out the obvious answer.
+I set technical direction across teams rather than inside one, and the best part of the job is seeing my team build something from my architecture and make it better than my version.
+I am opinionated about automation, linting, and how to brew a decent cup of coffee.
+
+\else%
 Thank you for coming to my 2-page TED Talk.
 I am a big-picture person who thinks in systems, and systems of systems, and uses that to spot where a problem really lives rather than where it is showing up.
 I can hold my own as a technical lead: I have worked from low-level FPGA and embedded through to cloud, infrastructure-as-code, and AI, and I can still argue the details.
 My value is best realised through other people: I build teams whose strengths cover each other's gaps, create cohesion, set a direction, and give them room to work out how they deliver best.
 I am opinionated about automation, linting, and how to brew a decent cup of coffee.
 
-\fi
+\fi\fi
 % Uncomment this to disable hyperlinks in the document
 % \begin{NoHyper}
 
@@ -75,6 +82,8 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Freelance
+%     Page-budget trim candidate. If a variant runs past 2 pages, drop in
+%     this order: Hobbies, then University of Bath, then this block.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{Content/Employment/2012-19_Freelance}
 
@@ -169,7 +178,7 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ifseniormgr%
 % \input{Content/Personal_Projects/Advent_of_Code}
-\else
+\else%
 \input{Content/Personal_Projects/Advent_of_Code}
 \fi
 
