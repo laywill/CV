@@ -129,9 +129,11 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 \ifseniormgr%
 % \input{Content/Skills_Languages_Tools_Technologies}
 \input{Content/Competencies}
-\else
+\else\iftechnical%
+\input{Content/Technical_Skills}
+\else%
 \input{Content/Skills_Languages_Tools_Technologies}
-\fi
+\fi\fi
 
 \input{horizontal_rule}
 
