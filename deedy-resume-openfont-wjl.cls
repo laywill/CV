@@ -31,6 +31,11 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+% CV variant flags. Declared here so every entry point sees every flag;
+% each main_*.tex sets exactly one of these true.
+\newif\ifseniormgr\seniormgrfalse
+\newif\iftechnical\technicalfalse
+
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.7cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
