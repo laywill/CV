@@ -82,10 +82,15 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Freelance
-%     Page-budget trim candidate. If a variant runs past 2 pages, drop in
-%     this order: Hobbies, then University of Bath, then this block.
+%     Third and last of the page-budget trim candidates, dropped in this
+%     order: Hobbies, then University of Bath, then this block. All three
+%     are off in the technical variant, which carries the open-source
+%     section instead.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftechnical%
+\else%
 \input{Content/Employment/2012-19_Freelance}
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Landlord
@@ -99,8 +104,13 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 %     University of Bath - consolidated student roles (2011 - 2017)
 %     Supersedes the standalone Telethon fragment and the two Activities
 %     fragments, which are kept on disk but no longer input.
+%     Second trim candidate for the page budget; off in the technical
+%     variant, where student leadership is the least relevant evidence.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftechnical%
+\else%
 \input{Content/Employment/2011-17_University_of_Bath}
+\fi
 
 % \input{Content/Employment/2015-17_Telethon}
 
@@ -171,9 +181,16 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 % \input{Content/Personal_Projects/2022_CV}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AI Agents
+%     Open Source
+%     Replaces the single AI_Agents line for the technical variant: the
+%     upstream contributions and public repositories are the evidence a
+%     hands-on IC role asks for by name. Protected against trimming.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftechnical%
+\input{Content/Open_Source}
+\else%
 \input{Content/Personal_Projects/AI_Agents}
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Advent of Code
@@ -186,8 +203,14 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Home Server
+%     Off in the technical variant. The three trim candidates below were
+%     not enough to hold 2 pages, and this is the weakest engineering
+%     evidence on the page for a hands-on reader.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftechnical%
+\else%
 \input{Content/Personal_Projects/2022_Home_Server}
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Magic Club Emails
@@ -225,8 +248,14 @@ I am opinionated about automation, linting, and how to brew a decent cup of coff
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Hobbies
+%     Dropped from the technical variant to hold the 2-page budget: the
+%     open-source section is the one this reader asked for by name, so it
+%     wins the space. See the trim order noted at the Freelance block.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iftechnical%
+\else%
 \input{Content/Hobbies}
+\fi
 
 % \input{horizontal_rule}
 
