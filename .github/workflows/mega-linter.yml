@@ -67,7 +67,7 @@ jobs:
         # (GitHub Actions, LaTeX, Markdown, YAML/JSON, spelling, secrets/SBOM
         # scanning) rather than the full generic MegaLinter image.
         # More info at https://github.com/laywill/megalinter-custom-flavor-github-latex-markdown
-        uses: laywill/megalinter-custom-flavor-github-latex-markdown@13ebde04a17b79972fb4f1b2417851230306dc37 # v10.0.0
+        uses: laywill/megalinter-custom-flavor-github-latex-markdown@f21635ccf09a0cd354f41205b94593846f9753bd # v10.1.0
 
         id: ml
 
