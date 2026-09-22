@@ -23,6 +23,7 @@
     "LDWS",
     "MOSFET",
     "OpenCPI",
+    "proc",
     "QinetiQ",
     "Questa",
     "RAID",
@@ -49,6 +50,8 @@
     "chktex",
     "Debarghya",
     "ifseniormgr",
-    "latexmkrc"
+    "iftechnical",
+    "latexmkrc",
+    "newif"
   ]
 }

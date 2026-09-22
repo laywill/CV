@@ -31,6 +31,7 @@ jobs:
         entrypoint:
           - main
           - main_senior_engineering_manager
+          - main_technical
 
     steps:
       - name: Checkout Code
@@ -73,3 +74,4 @@ jobs:
 
             - `cv-main.pdf`
             - `cv-main_senior_engineering_manager.pdf`
+            - `cv-main_technical.pdf`
