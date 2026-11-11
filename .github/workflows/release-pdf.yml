@@ -7,7 +7,7 @@ name: Release PDF
 # actually landed on main - it deliberately does not run on pull_request
 # (see .github/workflows/build-pdf.yml for that).
 #
-# This workflow rebuilds both PDFs itself rather than reusing the artifacts
+# This workflow rebuilds every PDF itself rather than reusing the artifacts
 # from build-pdf.yml's run, so it stays self-contained.
 on: # yamllint disable-line rule:truthy - false positive
   push:
@@ -33,6 +33,7 @@ jobs:
         entrypoint:
           - main
           - main_senior_engineering_manager
+          - main_technical
 
     steps:
       - name: Checkout Code
@@ -71,8 +72,8 @@ jobs:
 
       # Re-publishes the "latest" tag on every push to main. overwrite_files
       # is explicitly set (even though it already defaults to true) so a
-      # stale main.pdf / main_senior_engineering_manager.pdf from a prior
-      # run never lingers alongside the fresh ones - matching asset
+      # stale PDF from a prior run never lingers alongside the fresh
+      # ones - matching asset
       # filenames are replaced in place rather than accumulating.
       - name: Publish latest release
         uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
@@ -87,3 +88,4 @@ jobs:
           files: |
             main.pdf
             main_senior_engineering_manager.pdf
+            main_technical.pdf
